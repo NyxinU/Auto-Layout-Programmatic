@@ -9,24 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let candyImageView: UIImageView = {
+        let image = UIImage(named: "candyBar")
+        let imageView = UIImageView(image: image)
+        
+        // enables autolayout for imageView
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .black
-        let image = UIImage(named: "candyBar")
-        let imageView = UIImageView(image: image)
-        view.addSubview(imageView)
-        
-        // enables autolayout for imageView
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        
+        view.addSubview(candyImageView)
         
         NSLayoutConstraint.activate([
-            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            imageView.widthAnchor.constraint(equalToConstant: 100),
-            imageView.heightAnchor.constraint(equalToConstant: 100)
+            candyImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+//            imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            candyImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
+            candyImageView.widthAnchor.constraint(equalToConstant: 300),
+            candyImageView.heightAnchor.constraint(equalToConstant: 300)
         ])
     }
 

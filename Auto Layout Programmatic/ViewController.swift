@@ -23,17 +23,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .black
+        positionCandyImageView()
+    }
+    
+    private func positionCandyImageView() -> Void {
         view.addSubview(candyImageView)
         
         NSLayoutConstraint.activate([
             candyImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             candyImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
             candyImageView.widthAnchor.constraint(equalToConstant: 300),
             candyImageView.heightAnchor.constraint(equalToConstant: 300)
         ])
     }
-
 
 }
 

@@ -18,12 +18,25 @@ class ViewController: UIViewController {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
+    
+    let descriptionTextView: UITextView = {
+        let textView = UITextView()
+        textView.text = "This is a candy bar!"
+        textView.textColor = .white
+        textView.backgroundColor = .black
+        textView.font = UIFont.boldSystemFont(ofSize: 18)
+        textView.textAlignment = .center
+        
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        return textView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .black
         positionCandyImageView()
+        positionDescriptionTextView()
     }
     
     private func positionCandyImageView() -> Void {
@@ -34,6 +47,18 @@ class ViewController: UIViewController {
             candyImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
             candyImageView.widthAnchor.constraint(equalToConstant: 300),
             candyImageView.heightAnchor.constraint(equalToConstant: 300)
+        ])
+    }
+    
+    private func positionDescriptionTextView() -> Void {
+        view.addSubview(descriptionTextView)
+        
+        
+        NSLayoutConstraint.activate([
+            descriptionTextView.topAnchor.constraint(equalTo: candyImageView.bottomAnchor, constant: 100),
+            descriptionTextView.leftAnchor.constraint(equalTo: view.leftAnchor),
+            descriptionTextView.rightAnchor.constraint(equalTo: view.rightAnchor),
+            descriptionTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
     }
 

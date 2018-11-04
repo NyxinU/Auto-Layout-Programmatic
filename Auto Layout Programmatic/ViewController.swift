@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         textView.backgroundColor = .black
         textView.font = UIFont.boldSystemFont(ofSize: 18)
         textView.textAlignment = .center
+        textView.isEditable = false
+        textView.isScrollEnabled = false
         
         textView.translatesAutoresizingMaskIntoConstraints = false
         return textView
@@ -45,8 +47,8 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             candyImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             candyImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
-            candyImageView.widthAnchor.constraint(equalToConstant: 300),
-            candyImageView.heightAnchor.constraint(equalToConstant: 300)
+            candyImageView.widthAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.4),
+            candyImageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.4)
         ])
     }
     
@@ -55,7 +57,7 @@ class ViewController: UIViewController {
         
         
         NSLayoutConstraint.activate([
-            descriptionTextView.topAnchor.constraint(equalTo: candyImageView.bottomAnchor, constant: 100),
+            descriptionTextView.topAnchor.constraint(equalTo: candyImageView.bottomAnchor, constant: 50),
             descriptionTextView.leftAnchor.constraint(equalTo: view.leftAnchor),
             descriptionTextView.rightAnchor.constraint(equalTo: view.rightAnchor),
             descriptionTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor),

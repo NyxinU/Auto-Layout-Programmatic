@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Auto Layout Programmatic
+//  autolayout_lbta
 //
-//  Created by Nix on 11/2/18.
-//  Copyright © 2018 NXN. All rights reserved.
+//  Created by Brian Voong on 9/25/17.
+//  Copyright © 2017 Lets Build That App. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }

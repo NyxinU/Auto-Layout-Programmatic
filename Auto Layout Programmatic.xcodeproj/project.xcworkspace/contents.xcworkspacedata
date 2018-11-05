@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Auto Layout Programmatic.xcodeproj">
+      location = "self:autolayout_lbta.xcodeproj">
    </FileRef>
 </Workspace>

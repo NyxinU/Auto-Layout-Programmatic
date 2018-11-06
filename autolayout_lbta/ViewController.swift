@@ -39,6 +39,8 @@ class ViewController: UIViewController {
     
     private let previousButton: UIButton = {
        let button = UIButton(type: .system)
+        button.setTitle("Prev", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
@@ -50,6 +52,19 @@ class ViewController: UIViewController {
         view.addSubview(descriptionTextView)
         
         setupLayout()
+        setupBottomControls()
+    }
+    
+    fileprivate func setupBottomControls() {
+        view.addSubview(previousButton)
+        previousButton.backgroundColor = .red
+        
+        NSLayoutConstraint.activate([
+            previousButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            previousButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            previousButton.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.5),
+            previousButton.heightAnchor.constraint(equalToConstant: 50)
+        ])
     }
     
     private func setupLayout() {

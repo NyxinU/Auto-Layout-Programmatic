@@ -32,9 +32,6 @@ class ViewController: UIViewController {
         attributedText.append(NSAttributedString(string: "\n\n\nAre you ready for loads and loads of fun? Don't wait any longer! We hope to see you in our stores soon.", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13), NSAttributedStringKey.foregroundColor: UIColor.gray]))
         
         textView.attributedText = attributedText
-        
-//        textView.text = "Join us today in our fun and games!"
-//        textView.font = UIFont.boldSystemFont(ofSize: 18)
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.textAlignment = .center
         textView.isEditable = false
@@ -76,11 +73,11 @@ class ViewController: UIViewController {
         
         // here's our entry point into our app
 //        view.addSubview(bearImageView)
-        view.addSubview(descriptionTextView)
+//        view.addSubview(descriptionTextView)
         
         setupBottomControls()
         
-        setupLayout()
+//        setupLayout()
     }
     
     fileprivate func setupBottomControls() {
@@ -128,10 +125,7 @@ class ViewController: UIViewController {
         bearImageView.centerXAnchor.constraint(equalTo: topImageContainerView.centerXAnchor).isActive = true
         bearImageView.centerYAnchor.constraint(equalTo: topImageContainerView.centerYAnchor).isActive = true
         bearImageView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 0.5).isActive = true
-        
-        
-//        topImageContainerView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-//        topImageContainerView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+    
         topImageContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
         
         descriptionTextView.topAnchor.constraint(equalTo: topImageContainerView.bottomAnchor).isActive = true

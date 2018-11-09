@@ -73,11 +73,11 @@ class ViewController: UIViewController {
         
         // here's our entry point into our app
 //        view.addSubview(bearImageView)
-//        view.addSubview(descriptionTextView)
+        view.addSubview(descriptionTextView)
         
         setupBottomControls()
         
-//        setupLayout()
+        setupLayout()
     }
     
     fileprivate func setupBottomControls() {

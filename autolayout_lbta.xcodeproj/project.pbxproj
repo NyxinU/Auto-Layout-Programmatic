@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C74B37EC1F90660A00F4F883 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74B37EB1F90660A00F4F883 /* SwipingController.swift */; };
 		C74B37EE1F90698200F4F883 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74B37ED1F90698200F4F883 /* PageCell.swift */; };
+		C7997BFC1F9194B700B5DF56 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7997BFB1F9194B700B5DF56 /* Page.swift */; };
 		C79CF60D1F79AE6F00C1D117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79CF60C1F79AE6F00C1D117 /* AppDelegate.swift */; };
 		C79CF60F1F79AE6F00C1D117 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79CF60E1F79AE6F00C1D117 /* ViewController.swift */; };
 		C79CF6121F79AE6F00C1D117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79CF6101F79AE6F00C1D117 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		C74B37EB1F90660A00F4F883 /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		C74B37ED1F90698200F4F883 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		C7997BFB1F9194B700B5DF56 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		C79CF6091F79AE6F00C1D117 /* autolayout_lbta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autolayout_lbta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79CF60C1F79AE6F00C1D117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C79CF60E1F79AE6F00C1D117 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				C79CF6181F79AE6F00C1D117 /* Info.plist */,
 				C74B37EB1F90660A00F4F883 /* SwipingController.swift */,
 				C74B37ED1F90698200F4F883 /* PageCell.swift */,
+				C7997BFB1F9194B700B5DF56 /* Page.swift */,
 			);
 			path = autolayout_lbta;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				C79CF60D1F79AE6F00C1D117 /* AppDelegate.swift in Sources */,
 				C74B37EE1F90698200F4F883 /* PageCell.swift in Sources */,
 				C74B37EC1F90660A00F4F883 /* SwipingController.swift in Sources */,
+				C7997BFC1F9194B700B5DF56 /* Page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
